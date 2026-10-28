@@ -1,0 +1,151 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revuelta - Reciclaje y Recuperación de Tecnología</title>
+    <!-- Vinculación del archivo CSS -->
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+    <header>
+        <h1>Revuelta Mendoza</h1>
+        <img src="./img/Captura.PNG" width="200" alt="Logo de Revuelta">
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#faq">Preguntas Frecuentes</a></li>
+                <li><a href="#tienda">Tienda</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Inicio -->
+        <section id="inicio">
+            <h1>Revuelta</h1>
+            <h2>8 años en el servicio y reciclaje tecnológico</h2>
+            <p>Recuperamos, reparamos y reciclamos dispositivos electrónicos para reducir la basura tecnológica y colaborar con nuestra comunidad.</p>
+        </section>
+        
+        <br>
+
+        <!-- Nosotros -->
+        <section id="nosotros">
+            <h2>Sobre Nosotros</h2>
+            <p>
+                Somos un proyecto mendocino dedicado al rescate, reparación y reciclaje de equipamiento tecnológico. En un mundo donde los dispositivos se descartan rápidamente, nos encargamos de darles una segunda vida útil, reduciendo la basura electrónica y haciendo que la tecnología sea más accesible para nuestra comunidad a través de donaciones y venta responsable.
+            </p>
+            <ul>
+                <li><strong>♻️ Economía Circular:</strong> Recuperación y reacondicionamiento de hardware.</li>
+                <li><strong>🌱 Impacto Ambiental:</strong> Reducción activa de residuos electrónicos en Mendoza.</li>
+                <li><strong>🤝 Compromiso Social:</strong> Donación de equipos y piezas a proyectos comunitarios.</li>
+            </ul>
+        </section>
+
+        <br>
+
+        <!-- Servicios -->
+        <section id="servicios">
+            <h2>Servicios y Dispositivos que Recibimos</h2>
+            <p>Puede traer su dispositivo o podemos retirarlo de su domicilio para realizar una evaluación y estimar un costo de reparación o reciclaje.</p>
+            
+            <h3>Indique su dispositivo para consultar:</h3>
+            <label for="tipo-dispositivo">Tipo de dispositivo:</label>
+            <select name="tipo_dispositivo" id="tipo-dispositivo">
+                <option value="android">Celular Android</option>
+                <option value="iphone">Celular iPhone</option>
+                <option value="tablet">Tablet</option>
+                <option value="laptop">Laptop / PC</option>
+                <option value="teclado">Teclado</option>
+                <option value="mouse">Mouse</option>
+                <option value="pantalla">Pantalla</option>
+                <option value="otros">Otros</option>
+            </select>
+        </section>
+
+        <br>
+
+        <!-- Preguntas Frecuentes (Satisface la consigna) -->
+        <section id="faq">
+            <h2>Preguntas Frecuentes</h2>
+            
+            <h3>¿Cobran por recibir los dispositivos?</h3>
+            <p>No, recibir los equipos para reciclaje o donación no tiene costo alguno.</p>
+
+            <h3>¿Qué pasa con la información que hay dentro?</h3>
+            <p>Garantizamos un proceso estricto de borrado seguro y formateo de datos en todos los discos y memorias recibidas.</p>
+
+            <h3>¿Realmente reciclan los dispositivos?</h3>
+            <p>Sí, lo que no tiene arreglo se desguaza para clasificar metales y plásticos que van a plantas de reciclaje especializado.</p>
+
+            <h3>¿Dónde están ubicados?</h3>
+            <p>Estamos en nuestro local físico en Calle Entre Ríos 158, Mendoza.</p>
+        </section>
+
+        <br>
+
+        
+        <!-- Tienda -->
+    <section id="tienda">
+    <h1>Tienda</h1>
+    <p>Nuestros dispositivos reacondicionados en venta (Consultas y compras de manera presencial o por WhatsApp):</p>
+    
+    <!-- Agregamos este div contenedor para aplicar Flexbox -->
+    <div class="productos-contenedor">
+        
+        <article>
+            <img src="./img/Captura.PNG" alt="iPhone X" width="150">
+            <h3>iPhone X</h3>
+            <p>Estado: Reacondicionado y testeado.</p>
+            <a href="https://wa.me/542618855694?text=Hola,%20quisiera%20consultar%20por%20el%20iPhone%20X" target="_blank" rel="noopener">Consultar disponibilidad por WhatsApp</a>
+        </article>
+
+        <article>
+            <img src="./img/Captura.PNG" alt="Teclado Redragon" width="150">
+            <h3>Teclado Redragon</h3>
+            <p>Estado: Mantenimiento completo y teclas funcionales.</p>
+            <a href="https://wa.me/542618855694?text=Hola,%20quisiera%20consultar%20por%20el%20Teclado%20Redragon" target="_blank" rel="noopener">Consultar disponibilidad por WhatsApp</a>
+        </article>
+
+    </div>
+    </section>
+
+        <br>
+
+        <!-- Contacto -->
+        <section id="contacto">
+            <h1>Contacto y Ubicación</h1>
+            <p><strong>📍 Dirección:</strong> Calle Entre Ríos 158, Mendoza</p>
+            <p><strong>📲 WhatsApp:</strong> <a href="https://wa.me/542618855694" target="_blank" rel="noopener">+54 261 885-5694</a></p>
+            <p><strong>📸 Instagram:</strong> <a href="https://instagram.com/revuelta.mendoza" target="_blank" rel="noopener">@revuelta.mendoza</a></p>
+
+            <br>
+
+            <form action="#" method="POST">
+                <fieldset>
+                    <legend>Solicitud de Retiro o Consulta de Servicio</legend>
+
+                    <label for="nombre">Nombre y Apellido:</label><br>
+                    <input type="text" id="nombre" name="nombre" required><br><br>
+
+                    <label for="telefono">Teléfono de contacto:</label><br>
+                    <input type="tel" id="telefono" name="telefono" required><br><br>
+
+                    <label for="mensaje">Consulta o detalle del equipo:</label><br>
+                    <textarea id="mensaje" name="mensaje" rows="4" cols="40" placeholder="Escribí aquí los detalles..."></textarea><br><br>
+
+                    <button type="submit">Enviar Consulta</button>
+                </fieldset>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Revuelta Mendoza - Reciclaje y Tecnología Responsable.</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,148 @@
+/* ==========================================
+   1. ESTILOS GENERALES Y RESETEO BÁSICO
+   ========================================== */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: #F5F3EA; /* Fondo alternativo suave */
+    color: #152B2A;            /* Color principal para los textos */
+    margin: 0;
+    padding: 0;
+}
+
+/* Ajuste de márgenes para la estructura general */
+main {
+    width: 85%;
+    max-width: 900px;
+    margin: 20px auto;
+}
+
+/* ==========================================
+   2. ENCABEZADO Y NAVEGACIÓN (HEADER & NAV)
+   ========================================== */
+header {
+    background-color: #08592C; /* Elemento fuerte para la cabecera */
+    color: #FFFFFF;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0 0 10px 0;
+}
+
+/* Lista del menú */
+header nav ul {
+    list-style: none; /* Quitamos los viñetas de la lista */
+    padding: 0;
+    margin: 15px 0 0 0;
+}
+
+header nav ul li {
+    display: inline; /* Coloca los ítems uno al lado del otro */
+    margin: 0 10px;
+}
+
+/* Enlaces del menú */
+header nav ul li a {
+    color: #DCF6B8;
+    text-decoration: none; /* Quitamos el subrayado */
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline; /* Subraya al pasar el cursor */
+}
+
+/* ==========================================
+   3. SECCIONES Y CONTENIDO
+   ========================================== */
+section {
+    background-color: #FFFFFF;
+    padding: 20px;
+    margin-bottom: 25px;
+    border-radius: 8px; /* Bordes redondeados sutiles */
+    border-left: 6px solid #3CA20E; /* Borde destacado verde */
+}
+
+/* Títulos dentro de las secciones */
+h1, h2, h3 {
+    color: #08592C;
+}
+
+/* Destacado suave para Preguntas Frecuentes */
+#faq {
+    background-color: #DCF6B8; /* Fondo suave pedido en la paleta */
+}
+
+/* ==========================================
+   4. TARJETAS DE LA TIENDA (ARTICLES)
+   ========================================== */
+article {
+    border: 1px solid #DCF6B8;
+    padding: 15px;
+    margin-top: 15px;
+    border-radius: 6px;
+    background-color: #FFFFFF;
+}
+/* ==========================================
+   4. TARJETAS DE LA TIENDA (FLEXBOX)
+   ========================================== */
+
+/* El contenedor principal alinea a sus hijos en horizontal */
+.productos-contenedor {
+    display: flex;          /* Activa el modo horizontal */
+    flex-wrap: wrap;        /* Si no entran en pantallas chicas, pasan a la siguiente fila */
+    gap: 20px;              /* Espacio entre cada tarjeta */
+    justify-content: center; /* Centra los productos horizontalmente */
+}
+
+/* Cada tarjeta individual */
+#tienda article {
+    border: 1px solid #DCF6B8;
+    padding: 15px;
+    border-radius: 6px;
+    background-color: #FFFFFF;
+    
+    /* Ancho de cada tarjeta para que no se estiren demasiado */
+    width: 250px; 
+    text-align: center;     /* Centra el texto e imagen internamente */
+    
+    /* Pequeña sombra sutil para dar efecto de tarjeta */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05); 
+}
+
+/* ==========================================
+   5. BOTONES Y ENLACES DESTACADOS
+   ========================================== */
+a {
+    color: #08592C;
+}
+
+/* Estilo tipo botón para enlaces de WhatsApp y envíos */
+article a, button {
+    display: inline-block;
+    background-color: #3CA20E; /* Verde para botones */
+    color: #FFFFFF;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 4px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover, article a:hover {
+    background-color: #08592C; /* Oscurece un poco al pasar el mouse */
+}
+
+/* ==========================================
+   6. PIE DE PÁGINA (FOOTER)
+   ========================================== */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #152B2A;
+    color: #F5F3EA;
+    margin-top: 30px;
+}
